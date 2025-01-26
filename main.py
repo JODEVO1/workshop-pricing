@@ -7,11 +7,11 @@ import seaborn as sns
 coefficients = {
     'Lathe Machine': {
         'Initial Cost': 0.0004056891810690172,
-        'Space Occupied': 1.609495360944793,
-        'Power Rating': 0.04697320976320274,
-        'Time Spent': 424.90621134259817,
-        'Workpieces': -29.41797076859265,
-        'Operators': -55.66171992476241,
+        'Space Occupied': 0.033,
+        'Power Rating': 0.275,
+        'Time Spent': 0.224,
+        'Workpieces': 0.180,
+        'Operators': 0.201,
         'Ventilation Cost': 0.006782578466305367,
         'Cleaning Cost': 0.2553865093524714,
         'Waste Management Cost': -0.24896513218323035,
