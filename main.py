@@ -89,7 +89,7 @@ machine = st.selectbox("Select Machine Type", ['Lathe Machine', 'Milling Machine
 #          r"(\sigma \cdot \text{{Waste Management Cost}}) + (\lambda \cdot \text{{Toilet Usage Cost}})")
 
 # User inputs for the variable values
-initial_cost = st.number(1000,000)
+initial_cost = st.number_input("Initial Cost (₦)", min_value=1000,000)
 area_occupied = st.number_input("Area Occupied (m²)", min_value=50.0, max_value=500.0)
 power_rating = st.number_input("Power Rating (Watts)", min_value=10000, max_value=30000, step=500)
 time_spent = st.number_input("Time Spent (minutes)", min_value=60, max_value=720, step=10)
