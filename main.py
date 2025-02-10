@@ -14,7 +14,7 @@ coefficients = {
         'Operators': 0.201,
         'Ventilation Cost': 0.006782578466305367,
         'Cleaning Cost': 0.2553865093524714,
-        'Waste Management Cost': -0.24896513218323035,
+        'Waste Management Cost': 0,
         'Toilet Usage Cost': 0.04003480507607149
     },
     # 'Lathe Machine': {
@@ -38,7 +38,7 @@ coefficients = {
         'Operators': -250.80477836446548,
         'Ventilation Cost': -0.06533824398165722,
         'Cleaning Cost': 0.30564880475519285,
-        'Waste Management Cost': -0.45646450783863113,
+        'Waste Management Cost': 0,
         'Toilet Usage Cost': -0.05682205290169007
     },
     'Drilling Machine': {
@@ -62,7 +62,7 @@ coefficients = {
         'Operators': 25.47044128146337,
         'Ventilation Cost': 0.02776236843792823,
         'Cleaning Cost': -0.44320158037384694,
-        'Waste Management Cost': 0.31620646252755336,
+        'Waste Management Cost': 0,
         'Toilet Usage Cost': -0.08500903366631007
     },
     # Add coefficients for more machines here
