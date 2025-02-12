@@ -92,7 +92,7 @@ machine = st.selectbox("Select Machine Type", ['Big Lathe Machine', 'Small Lathe
 initial_cost =  st.number_input("Initial Cost (₦)", min_value=1000000)
 area_occupied = st.number_input("Area Occupied (m²)", min_value=50.0, max_value=500.0)
 power_rating = st.number_input("Power Rating (Watts)", min_value=10000, max_value=30000, step=500)
-time_spent = st.number_input("Time Spent (minutes)", min_value=60, max_value=720, step=10)
+time_spent = st.number_input("Time Spent (minutes)", min_value=60, max_value=720, step=60)
 workpieces = st.number_input("Workpieces (units)", min_value=1, max_value=100, step=1)
 operators = st.number_input("Operators (persons)", min_value=1, max_value=10, step=1)
 ventilation_cost = st.number_input("Ventilation Cost (₦)", min_value=1000, max_value=20000, step=500)
