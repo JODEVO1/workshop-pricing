@@ -19,7 +19,7 @@ coefficients = {
     },
      'Big Lathe Machine': {
          'Initial Cost': 0.0021354470349066682,
-         'Space Occupied': 0.045,
+         'Space Occupied': 0.45,
          'Power Rating': 0.224,
          'Time Spent':  1.149638260612507,
          'Workpieces':  0.214,
