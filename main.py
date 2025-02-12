@@ -21,7 +21,7 @@ coefficients = {
          'Initial Cost': 0.0021354470349066682,
          'Space Occupied': 0.045,
          'Power Rating': 0.224,
-         'Time Spent':  7.149638260612507,
+         'Time Spent':  6.149638260612507,
          'Workpieces':  0.214,
          'Operators': 0.0201,
          'Ventilation Cost': 0.021944294186857505,
