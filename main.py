@@ -5,7 +5,7 @@ import seaborn as sns
 
 # Define the coefficients for different machines (example coefficients for lathe machine)
 coefficients = {
-    'Lathe Machine': {
+    'Small Lathe Machine': {
         'Initial Cost': 0.0004056891810690172,
         'Space Occupied': 0.033,
         'Power Rating': 0.275,
@@ -17,18 +17,18 @@ coefficients = {
         'Waste Management Cost': 0,
         'Toilet Usage Cost': 0.04003480507607149
     },
-    # 'Lathe Machine': {
-    #     'Initial Cost': 0.0021354470349066682,
-    #     'Space Occupied': -2.61612541356795,
-    #     'Power Rating': 1.149638260612507,
-    #     'Time Spent': 468.51710915382426,
-    #     'Workpieces': 21.69563815226035,
-    #     'Operators': 76.13204634808838,
-    #     'Ventilation Cost': 0.021944294186857505,
-    #     'Cleaning Cost': 0.06706617721440011,
-    #     'Waste Management Cost': -0.11152782346905354,
-    #     'Toilet Usage Cost': 0.13281861336268186
-    # },
+     'Big Lathe Machine': {
+         'Initial Cost': 0.0021354470349066682,
+         'Space Occupied': -2.61612541356795,
+         'Power Rating': 1.149638260612507,
+         'Time Spent': 468.51710915382426,
+         'Workpieces': 21.69563815226035,
+         'Operators': 76.13204634808838,
+         'Ventilation Cost': 0.021944294186857505,
+         'Cleaning Cost': 0.06706617721440011,
+         'Waste Management Cost': -0.11152782346905354,
+         'Toilet Usage Cost': 0.13281861336268186
+     },
     'Milling Machine': {
         'Initial Cost': 0.0008444683998909656,
         'Space Occupied': 0.37965008701319825,
@@ -78,7 +78,7 @@ st.title("Workshop Machine Price Estimator")
 st.write("A simple estimator to determine the price based on machine usage using Multiple Linear Regression.")
 
 # Dropdown for selecting the machine type
-machine = st.selectbox("Select Machine Type", ['Lathe Machine', 'Milling Machine', 'Grounding Machine', 'Drilling Machine'])  # Add more machines as needed
+machine = st.selectbox("Select Machine Type", ['Big Lathe Machine', 'Small Lathe Machine', 'Milling Machine', 'Grounding Machine', 'Drilling Machine'])  # Add more machines as needed
 
 # Display the formula for the selected machine
 # st.write(f"### Formula for {machine}:")
