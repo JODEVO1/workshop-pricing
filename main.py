@@ -19,14 +19,14 @@ coefficients = {
     },
      'Big Lathe Machine': {
          'Initial Cost': 0.0021354470349066682,
-         'Space Occupied': -2.61612541356795,
+         'Space Occupied': 0.045,
          'Power Rating': 1.149638260612507,
-         'Time Spent': 468.51710915382426,
-         'Workpieces': 21.69563815226035,
-         'Operators': 76.13204634808838,
+         'Time Spent': 0.224,
+         'Workpieces':  0.214,
+         'Operators': 0.201,
          'Ventilation Cost': 0.021944294186857505,
          'Cleaning Cost': 0.06706617721440011,
-         'Waste Management Cost': -0.11152782346905354,
+         'Waste Management Cost': 0.,
          'Toilet Usage Cost': 0.13281861336268186
      },
     'Milling Machine': {
