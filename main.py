@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import datetime
 import os
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 # Define the coefficients for different machines (example coefficients for lathe machine)
 coefficients = {
@@ -29,7 +31,44 @@ coefficients = {
         'Waste Management Cost': 0.,
         'Toilet Usage Cost': 0.13281861336268186
     },
-    # Add more machines...
+'Milling Machine': {
+        'Initial Cost': 0.0008444683998909656,
+        'Space Occupied': 0.37965008701319825,
+        'Power Rating': 0.32631605467933955,
+        'Time Spent': 406.5041220927978,
+        'Workpieces': 4.540691290604314,
+        'Operators': -250.80477836446548,
+        'Ventilation Cost': -0.06533824398165722,
+        'Cleaning Cost': 0.30564880475519285,
+        'Waste Management Cost': 0,
+        'Toilet Usage Cost': -0.05682205290169007
+    },
+    'Drilling Machine': {
+        'Initial Cost': 0.0008811454118560923,
+        'Space Occupied': -1.3291536349971844,
+        'Power Rating': 0.34074783975501166,
+        'Time Spent': 421.76580196132716,
+        'Workpieces': 22.633467305981846,
+        'Operators': 74.3906011948468,
+        'Ventilation Cost': 0.014096088617983726,
+        'Cleaning Cost': -0.05696711576000535,
+        'Waste Management Cost': -0.03183167891841876,
+        'Toilet Usage Cost': -0.1866917036962925
+    },
+    'Grounding Machine': {
+        'Initial Cost': 0.0010288561910239888,
+        'Space Occupied': -1.1066286541216819,
+        'Power Rating': 0.26439350427659036,
+        'Time Spent': 422.7564015070455,
+        'Workpieces': -27.967300562716243,
+        'Operators': 25.47044128146337,
+        'Ventilation Cost': 0.02776236843792823,
+        'Cleaning Cost': -0.44320158037384694,
+        'Waste Management Cost': 0,
+        'Toilet Usage Cost': -0.08500903366631007
+    },
+    # Add coefficients for more machines here
+    
 }
 
 # Function to calculate the price based on selected machine and input values
