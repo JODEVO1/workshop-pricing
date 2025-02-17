@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import datetime
+import os
 
 # Define the coefficients for different machines (example coefficients for lathe machine)
 coefficients = {
@@ -75,9 +76,43 @@ data = {
     'Toilet Usage Cost': toilet_usage_cost
 }
 
+# File path for storing customer history
+csv_file = "pricing_history.csv"
+
+# Function to save data to CSV
+def save_to_csv(customer_name, machine, price, time_logged_in):
+    new_entry = pd.DataFrame([{
+        "Customer Name": customer_name,
+        "Machine Type": machine,
+        "Estimated Price (₦)": price,
+        "Time Logged In": time_logged_in
+    }])
+
+    # Check if file exists and append accordingly
+    if os.path.exists(csv_file):
+        existing_data = pd.read_csv(csv_file)
+        updated_data = pd.concat([existing_data, new_entry], ignore_index=True)
+        updated_data.to_csv(csv_file, index=False)
+    else:
+        new_entry.to_csv(csv_file, index=False)
+
 # Calculate and display the price
 if st.button("Estimate Price"):
     price = calculate_price(machine, data)
+    
+    # Save to CSV
+    save_to_csv(customer_name, machine, price, time_logged_in)
+    
     st.success(f"**Customer Name:** {customer_name}")
     st.success(f"**Time Logged In:** {time_logged_in}")
     st.success(f"The estimated price for {machine} usage is: ₦{price:,.2f}")
+
+# Add a button to download the CSV file
+if os.path.exists(csv_file):
+    with open(csv_file, "rb") as file:
+        st.download_button(
+            label="Download Pricing History",
+            data=file,
+            file_name="pricing_history.csv",
+            mime="text/csv"
+        )
