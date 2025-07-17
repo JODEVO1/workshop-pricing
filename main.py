@@ -60,9 +60,9 @@ customer_name = st.text_input("Enter Customer Name", placeholder="John Doe")
 machine = st.selectbox("Select Machine Type", list(coefficients.keys()))
 
 # User inputs for the variable values
-initial_cost = st.number_input("Initial Cost (₦)", min_value=1000000)
-area_occupied = st.number_input("Area Occupied (m²)", min_value=50.0, max_value=500.0)
-power_rating = st.number_input("Power Rating (Watts)", min_value=10000, max_value=30000, step=500)
+initial_cost = st.number_input("Initial Cost (₦)", min_value=1000000, step=100000)
+area_occupied = st.number_input("Area Occupied (m²)", min_value=1.0, max_value=500.0)
+power_rating = st.number_input("Power Rating (Watts)", min_value=2000, max_value=30000, step=100)
 time_spent = st.number_input("Time Spent (minutes)", min_value=60, max_value=720, step=60)
 
 # Input data for calculation
@@ -71,7 +71,6 @@ data = {
     'Space Occupied': area_occupied,
     'Power Rating': power_rating,
     'Time Spent': time_spent,
-    'Workpieces': workpieces,
     'Machine constant': Machine constant,
     
 }
