@@ -71,7 +71,7 @@ data = {
     'Space Occupied': area_occupied,
     'Power Rating': power_rating,
     'Time Spent': time_spent,
-    'Machine constant': Machine constant,
+    'Machine constant': Machine_constant,
     
 }
 
