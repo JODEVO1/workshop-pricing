@@ -8,33 +8,36 @@ import seaborn as sns
 # Define the coefficients for different machines (example coefficients for lathe machine)
 coefficients = {
     'Small Lathe Machine': {
-        'Initial Cost': -0.000090,
-        'Space Occupied': -0.547080,
-        'Power Rating': -58.571101,
+        'Initial Cost': -0.000012,
+        'Space Occupied': 232.917649,
+        'Power Rating': 33.378031,
         'Time Spent': 19.707472,
         'Machine fee': 673.339524,
-        
+        'Cost of Repairs': -0.000311
     },
     'Big Lathe Machine': {
-       'Initial Cost': -0.000090,
-        'Space Occupied': -0.547080,
-        'Power Rating': -58.571101,
+       'Initial Cost': -0.000012,
+        'Space Occupied': 232.917649,
+        'Power Rating': 33.378031,
         'Time Spent': 19.707472,
         'Machine fee': 3307.525969,
+        'Cost of Repairs': -0.000311
     },
 'Milling Machine': {
-        'Initial Cost': -0.000090,
-        'Space Occupied': -0.547080,
-        'Power Rating': -58.571101,
+        'Initial Cost': -0.000012,
+        'Space Occupied': 232.917649,
+        'Power Rating': 33.378031,
         'Time Spent': 19.707472,
         'Machine fee': 2006.527801,
+    'Cost of Repairs': -0.000311
     },
     'Drilling Machine': {
-       'Initial Cost': -0.000090,
-        'Space Occupied': -0.547080,
-        'Power Rating': -58.571101,
+       'Initial Cost': -0.000012,
+        'Space Occupied': 232.917649,
+        'Power Rating': 33.378031,
         'Time Spent': 19.707472,
         'Machine fee': -1015.412413,
+        'Cost of Repairs': -0.000311
     },
     
     # Add coefficients for more machines here
@@ -71,7 +74,7 @@ data = {
     'Space Occupied': area_occupied,
     'Power Rating': power_rating,
     'Time Spent': time_spent,
-    'Machine constant': Machine_constant,
+    'Machine fee': Machine_constant,
     
 }
 
