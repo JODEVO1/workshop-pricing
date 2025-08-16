@@ -9,7 +9,7 @@ coefficients = {
     "Small Lathe Machine": {
         "Initial Cost": 0.000083,
         "Space Occupied": 338.214083,
-        "Power Rating": -107.896397,
+        "Power Rating": 107.896397,
         "Time Spent": 73.129236,
         "Machine fee": 185.953747,
         "Cost of Repairs": -0.000019,
