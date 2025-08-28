@@ -7,11 +7,11 @@ import streamlit as st
 # Define the coefficients for different machines (example coefficients for lathe machine)
 coefficients = {
     "Small Lathe Machine": {
-        "Initial Cost": 0.178065,
-        "Space Occupied": 338.214083,
-        "Power Rating": 0.160778,
-        "Time Spent": 0.252128,
-        "Machine fee": 0.049587,
+        "Initial Cost": -1.22398763e-04,
+        "Space Occupied": 2.38609674e+01,
+        "Power Rating": 2.44868028e-01,
+        "Time Spent": 2.05883403e+01,
+        "Machine fee":  4.77219349e+01,
         "Cost of Repairs": -0.000019,
     },
     "Big Lathe Machine": {
