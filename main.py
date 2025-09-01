@@ -7,36 +7,39 @@ import streamlit as st
 # Define the coefficients for different machines (example coefficients for lathe machine)
 coefficients = {
     "Small Lathe Machine": {
-        "Initial Cost": -1.22398763e-04,
-        "Space Occupied": 2.38609674e+01,
-        "Power Rating": 2.44868028e-01,
-        "Time Spent": 2.05883403e+01,
-        "Machine fee":  4.77219349e+01,
-        "Cost of Repairs": -0.000019,
+        "Initial Cost": -0.0001223987634234669,
+        "Space Occupied": 23.860967424961455,
+        "Power Rating": 0.24486802769697838,
+        "Time Spent": 969.5945945945956,
+        "Machine fee":  -357.91124646820236,
+         "Intercept": -42.41452664973076,
+
     },
     "Big Lathe Machine": {
-        "Initial Cost": 0.000083,
-        "Space Occupied":  338.214083,
-        "Power Rating": -107.896397,
-        "Time Spent": 73.129236,
-        "Machine fee": 262.723900,
-        "Cost of Repairs": -0.000019,
+        "Initial Cost": -0.0001223987634234669,
+        "Space Occupied": 23.860967424961455,
+        "Power Rating": 0.24486802769697838,
+        "Time Spent": 969.5945945945956,
+        "Machine fee": 50.99374572680593,
+         "Intercept": -42.41452664973076,
+        
     },
     "Milling Machine": {
-        "Initial Cost": 0.000083,
-        "Space Occupied":  338.214083,
-        "Power Rating": -107.896397,
-        "Time Spent": 73.129236,
-        "Machine fee": 2006.527801,
-        "Cost of Repairs": -0.000019,
+        "Initial Cost": -0.0001223987634234669,
+        "Space Occupied": 23.860967424961455,
+        "Power Rating": 0.24486802769697838,
+        "Time Spent": 969.5945945945956,
+        "Machine fee":  47.72193485016786,
+         "Intercept": -42.41452664973076,
+        
     },
     "Drilling Machine": {
-        "Initial Cost": 0.000083,
-        "Space Occupied":  338.214083,
-        "Power Rating": -107.896397,
-        "Time Spent": 73.129236,
-        "Machine fee": -1015.412413,
-        "Cost of Repairs": -0.000019,
+      "Initial Cost": -0.0001223987634234669,
+        "Space Occupied": 23.860967424961455,
+        "Power Rating": 0.24486802769697838,
+        "Time Spent": 969.5945945945956,
+        "Machine fee": 238.60722556982725,
+       "Intercept": -42.41452664973076,
     },
     # Add coefficients for more machines here
 }
@@ -80,7 +83,7 @@ data = {
     "Power Rating": power_rating,
     "Time Spent": time_spent,
     "Machine fee": coefficients[machine]["Machine fee"],
-    "Cost of Repairs": 1,  # Add a default value or create an input for this
+    "Intercept": 1,  # Add a default value or create an input for this
 }
 
 # File path for storing customer history
