@@ -92,7 +92,7 @@ data = {
     "Space Occupied": area_occupied,
     "Power Rating": power_rating,
     "Time Spent": time_spent,
-    "Machine fee": coefficients[machine]["Machine fee"],
+    "Machine fee": 1,
     "Intercept": 1,  # Add a default value or create an input for this
 }
 
