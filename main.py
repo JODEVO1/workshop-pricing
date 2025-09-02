@@ -58,7 +58,7 @@ def calculate_price(machine, data):
         print(f"Input data for {key}: {data[key]}")
         print(f"Term for {key}: {term}")
         price += term
-    return price
+    return round(price, -2)
 
 
 # Capture the time logged in
@@ -83,7 +83,7 @@ power_rating = st.number_input(
     "Power Rating (Watts)", min_value=2000, max_value=30000, step=100
 )
 time_spent = st.number_input(
-    "Time Spent (minutes)", min_value=60, max_value=720, step=60
+    "Time Spent (hours)", min_value=1, max_value=8, step=1
 )
 
 # Input data for calculation
