@@ -50,6 +50,16 @@ def calculate_price(machine, data):
     price = sum(coefficients[machine][key] * data[key] for key in coefficients[machine])
     return price
 
+def calculate_price(machine, data):
+    price = 0
+    for key in coefficients[machine]:
+        term = coefficients[machine][key] * data[key]
+        print(f"Coefficient for {key}: {coefficients[machine][key]}")
+        print(f"Input data for {key}: {data[key]}")
+        print(f"Term for {key}: {term}")
+        price += term
+    return price
+
 
 # Capture the time logged in
 time_logged_in = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
